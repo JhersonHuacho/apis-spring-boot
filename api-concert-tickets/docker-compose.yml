@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:10.11
+    container_name: mariadb-tickets
+    restart: always
+    ports:
+      - "3307:3306" # puedes cambiar el puerto del host si ya usas el 3306
+    environment:
+      MARIADB_ROOT_PASSWORD: 123456789
+      MARIADB_DATABASE: db_concert_tickets
+      MARIADB_USER: tickets_user
+      MARIADB_PASSWORD: 123456
+    volumes:
+      - tickets_data:/var/lib/mysql
+    networks:
+      - tickets_net
+volumes:
+  tickets_data:
+networks:
+  tickets_net:
+    driver: bridge
