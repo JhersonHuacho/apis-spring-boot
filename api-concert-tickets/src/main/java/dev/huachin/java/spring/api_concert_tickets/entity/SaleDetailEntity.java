@@ -29,6 +29,7 @@ public class SaleDetailEntity {
     @Column(name = "unit_price")
     private BigDecimal unitPrice;
     private BigDecimal subtotal;
+    @Column(insertable = false)
     private Boolean status;
     @Column(name = "created_at", insertable = false, updatable = false)
     private LocalDateTime createdAt;

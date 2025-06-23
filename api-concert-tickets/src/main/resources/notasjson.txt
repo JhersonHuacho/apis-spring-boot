@@ -1,0 +1,8 @@
+* TicketType
+
+{
+  "concertId": 2,
+  "name": "GENERAL",
+  "unitPrice": 100,
+  "stock": 20
+}

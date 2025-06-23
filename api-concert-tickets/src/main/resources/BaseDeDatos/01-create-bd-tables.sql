@@ -83,7 +83,7 @@ CREATE TABLE sales (
     sale_date DATETIME DEFAULT CURRENT_TIMESTAMP(),
     total DECIMAL(10,2) NOT NULL,
     operation_number VARCHAR(20) UNIQUE,
-    status ENUM('PAID', 'CANCELLED') DEFAULT 'PAID',
+    status ENUM('PENDING','PAID', 'CANCELLED') DEFAULT 'PENDING',
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     updated_at  TIMESTAMP,
     FOREIGN KEY (customer_id) REFERENCES customers(id)
