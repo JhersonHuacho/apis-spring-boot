@@ -6,3 +6,8 @@
   "unitPrice": 100,
   "stock": 20
 }
+
+* Apis
+https://dummyjson.com/docs/users#users-all
+https://developer.ticketmaster.com/products-and-docs/apis/getting-started/
+https://developers.tickettailor.com/docs/api/ticket-tailor-api
